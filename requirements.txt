@@ -1,0 +1,7 @@
+instlFlask==1.1.1
+gunicorn==19.9.0
+matplotlib==3.1.3
+seaborn==0.10.0
+pandas==1.0.1
+numpy==1.18.1
+scikit_learn==0.23.2
