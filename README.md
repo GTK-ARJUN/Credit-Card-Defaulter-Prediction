@@ -65,6 +65,11 @@ pip install -r requirements.txt
 - [Akshay Arjun Sonawane](https://github.com/GTK-ARJUN).
 
 
+## YouTube Video
+
+- https://www.youtube.com/watch?v=fe6UbznGRLU
+
+
 ## Credits
 - The datasets has been provided by [Kaggle](https://www.kaggle.com/uciml/default-of-credit-card-clients-dataset). The original dataset can be found [here](https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients) at the UCI Machine Learning Repository. This project wouldn't have been possible without this dataset.
  
