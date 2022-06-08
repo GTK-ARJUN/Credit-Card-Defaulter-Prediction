@@ -15,9 +15,11 @@ import pickle
 app = Flask(__name__)
 model = pickle.load(open('model.pkl', 'rb'))
 
+
 @app.route('/')
 def home():
     return render_template('index.html')
+
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -27,7 +29,8 @@ def predict():
     features = [int(x) for x in request.form.values()]
 
     # re-arranging the list as per data set
-    feature_list = [features[4]] + features[:4] + features[5:11][::-1] + features[11:17][::-1] + features[17:][::-1]
+    feature_list = [features[4]] + features[:4] + \
+        features[5:11][::-1] + features[11:17][::-1] + features[17:][::-1]
     features_arr = [np.array(feature_list)]
 
     prediction = model.predict(features_arr)
@@ -41,7 +44,7 @@ def predict():
     else:
         result = "The Credit card holder will not be Defaulter in the next month"
 
-    return render_template('index.html', prediction_text = result)
+    return render_template('index.html', prediction_text=result)
 
 
 if __name__ == '__main__':
@@ -49,7 +52,3 @@ if __name__ == '__main__':
 
 
 # In[ ]:
-
-
-
-
