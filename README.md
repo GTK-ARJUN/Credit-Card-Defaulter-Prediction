@@ -61,8 +61,8 @@ pip install -r requirements.txt
 
 ## Team
 
-[Vamsi Alla](https://github.com/krishnasoft002).
-[Akshay Arjun Sonawane](https://github.com/GTK-ARJUN).
+- [Vamsi Alla](https://github.com/krishnasoft002).
+- [Akshay Arjun Sonawane](https://github.com/GTK-ARJUN).
 
 
 ## Credits
